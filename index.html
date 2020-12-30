@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css"/>
+    <title>PERFECT BIO</title>
+
+    <!------- icon title-------->
+    <link rel="icon" href="./imgs/logo perfecct bio final.jpg"/>
+
+    <!------- font awesome-------->
+    <script src="https://kit.fontawesome.com/fcdbb5efb6.js" crossorigin="anonymous"></script>
+
+    <!------- Google fonts-------->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div class="navbar-bio">
+    <div>
+        <img src="./imgs/logo perfecct bio final.jpg" alt="" width="180px" class="logo">
+
+        <a href="#">Nouveautes</a>
+
+        <a href="#">Nos coffrets</a>
+
+        <a href="#">Soin visage</a>
+
+        <a href="#">Soin cheveux</a>
+
+        <a href="#">Best sellers</a>
+    </div>
+
+    <div>
+        <i class="fas fa-shopping-cart vert"></i>
+        <a href="#" class="list">Panier</a>
+
+    </div>
+</div>
+
+<section class="contenu">
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+                <img src="imgs/hair.png" class="d-block w-100" alt="..."/>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <img src="imgs/hair 2.jpg" class="d-block w-100" alt="..."/>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+    </div>
+</section>
+<div class="panier">
+    <div class="title">
+        <h3>Panier</h3>
+    </div>
+    <table class="table">
+        <thead>
+        <tr>
+            <th class="product-thumbnail">&nbsp;Produit</th>
+            <th class="product-name">&nbsp;</th>
+            <th class="favorite-product">&nbsp;</th>
+            <th class="product-price">Prix</th>
+            <th class="product-quantity">Quantité</th>
+            <th >Sous-total</th>
+            <th >&nbsp;</th>
+
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr>
+            <td>
+                <img src="./imgs/masque collagéne.jpg" alt="" width="190" height="180" class="product1">
+
+
+            </td>
+            <td class="product-name" data-title="Produit">
+                <a href="#">Collargan Mask
+                </a>
+            </td>
+            <td>
+                <i class="fas fa-heart fa-2x love favorite" aria-hidden="true"></i>
+            </td>
+            <td class="product-price" data-title="Prix">
+                <span id="price1">35.00</span><span>TND</span>
+            </td>
+            <td class="product-quantity" data-title="Quantité">
+                <div class="col justify-content-around">
+                    <i class="fas fa-plus"></i>
+                    <span class="quantity">0</span>
+                    <i class="fas fa-minus"></i>
+                    
+                  </div>
+                
+            </td>
+            <td>
+                <span id="price-total1" class="product-subtotal" data-price="price1">35 </span>
+                <span>TND</span>
+            </td>
+            <td>
+                <a class="product-remove" href="#">×</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="./imgs/créme mains.jpg" alt="" width="190" height="180" class="product1">
+            </td>
+
+            <td>
+                <a href="#">crème hydratante et éclaircissante pour mains et pieds</a>
+            </td>
+            <td>
+                <i class="fas fa-heart fa-2x love favorite" aria-hidden="true"></i>
+            </td>
+
+            <td>
+                <span id="price2">28.00<span>TND</span></span>
+            </td>
+
+            <td>
+                <div class="col justify-content-around">
+                    <i class="fas fa-plus"></i>
+                    <span class="quantity">0</span>
+                    <i class="fas fa-minus"></i>
+                    
+                  </div>
+                
+
+            </td>
+            <td>
+                <span id="price-total2" class="product-subtotal" data-price="price2">28</span> <span>TND</span>
+            </td>
+            <td>
+                <a class="product-remove" href="#">×</a>
+            </td>
+        </tr>
+        <tfoot>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <th>Total à payer : <span class="total">63</span> <span>TND</span></th>
+        </tr>
+        </tfoot>
+        </tbody>
+    </table>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="main.js"></script>
